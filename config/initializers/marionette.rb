@@ -1,0 +1,1 @@
+ServiceChooser::Application.config.marionette_app_name = 'ServiceChooser'

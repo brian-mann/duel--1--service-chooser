@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>ServiceChooser</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+	<head>
+		<title>ServiceChooser</title>
+		<%= stylesheet_link_tag    "application", :media => "all" %>
+		<%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=PT+Sans:400,700" %>
+		<%= javascript_include_tag "http://code.jquery.com/jquery-1.9.1.min.js" %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<%= yield %>
+		<%= javascript_include_tag "application" %>
+	</body>
 </html>

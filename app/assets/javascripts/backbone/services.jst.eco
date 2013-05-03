@@ -1,0 +1,16 @@
+<form id="main">
+	<h1>My Services</h1>
+	<ul id="services">
+		<% for service in @items: %>
+			<li>
+				<label>
+					<input data-title="<%= service.title %>" type="checkbox" value="1" name="" />
+					<%= service.title %>
+					<span><%= service.price %></span>
+				</label>
+			</li>
+		<% end %>
+	</ul>
+	<p id="total">total: <span>$<span id="price">0</span></span></p>
+	<input type="submit" id="order" value="Order" />
+</form>
