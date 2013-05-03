@@ -7,5 +7,5 @@ class App.Services extends Backbone.Collection
 		@findWhere({title: title}).set isSelected: !@findWhere({title: title}).get("isSelected")
 		_.reduce @where({isSelected: true}), ((total, model) -> total + model.get("price")), 0	
 App.start = ->
-	services = new App.Services	[{ title: 'web development', price: 200 }, { title: 'web design',	price: 250 }, { title: 'photography', price: 100 }, { title: 'coffee drinking', price: 10  }]
+	services = new App.Services	[{ title: 'web development', price: 200 }, { title: 'web design', price: 250 }, { title: 'photography', price: 100 }, { title: 'coffee drinking', price: 10  }]
 	$("#main-region").html(new App.View({collection: services}).render().el)
